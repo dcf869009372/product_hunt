@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', products.views.product_list,name='主页'),
     path('account/', include("account.urls")),
-    path('products/',include('products.urls'))
+    path('products/',include('products.urls')),
+    # path('<int:product_id>/',products.views.detail,name='产品细节'),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
