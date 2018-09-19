@@ -6,16 +6,16 @@
     {% csrf_token %}
     APP名称：
     <br>
-    <input type="text" name="App名称"><br>
+    <input type="text" name="APP名称" placeholder="例：抖音-用段视频记录美好生活"><br>
     <br>
     介绍：
     <br>
-    <textarea cols="100" rows="10" name="介绍"></textarea>
+    <textarea cols="100" rows="10" name="介绍" placeholder="在这里写APP介绍"></textarea>
     <br>
     <br>
     APP链接：
     <br>
-    <input type="text" name="APP链接">
+    <input type="text" name="APP链接" placeholder="请输入网址">
     <br>
     <br>
     APP图标（缩略图）：
@@ -27,5 +27,6 @@
     <br>
     <br>
     <input type="submit" class="btn btn-primary" value="发布">
+    {{ 错误 }}
 </form>
 {% endblock content %}
